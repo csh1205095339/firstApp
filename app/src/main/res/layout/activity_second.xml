@@ -5,23 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="MissingConstraints"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
         <com.example.myapplication.TitleLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </com.example.myapplication.TitleLayout>
+            android:layout_height="wrap_content"></com.example.myapplication.TitleLayout>
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="this Second!"
             android:layout_gravity="center"
+            android:background="@color/purple_700"
+            android:textColor="#007BFF"
             android:gravity="center"
-            android:textSize="24sp"
-            ></TextView>
+            android:text="@string/hero_list"
+            android:textSize="24sp"></TextView>
+                <ListView
+                    android:id="@+id/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
