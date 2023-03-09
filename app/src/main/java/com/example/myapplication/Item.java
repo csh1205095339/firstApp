@@ -1,8 +1,6 @@
 package com.example.myapplication;
 
-import android.widget.Button;
-
-public class Item {
+import android.widget.Button;  public class Item {
     Button button;
     String text;
 
